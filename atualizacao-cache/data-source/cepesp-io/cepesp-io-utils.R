@@ -54,13 +54,15 @@ get_dados = function(categoria,
     extra_param
   )
   
-  print(url)
-  
   # Extrai nomes e tamanhos dos arquivos via requisição HEAD da api do CEPESP
   head = HEAD(url)
   headers = head[['headers']]
   
   nome.arquivo = headers[["content-disposition"]] %>% str_extract("[^=]*.csv")
+  
+  if (is.na(nome.arquivo) | is.null(nome.arquivo)) {
+    nome.arquivo = glue("{categoria}-{cargo}-{ano}-{extras_params}.csv")
+  }
   
   # Define caminho onde o arquivo será baixado
   caminho.arquivo = file.path(DATA_DIR, nome.arquivo)

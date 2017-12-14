@@ -10,7 +10,7 @@ Essa documentação é uma parte do sistema **De olho no BR**, [confira  a docum
 #### Banco de dados de cache
  **Obs:** *O portal web deve ser executado após a configuração e execução do [sistema de atualização de cache de dados](../atualizacao-cache/README.MD). Portanto, neste ponto o banco deve estar instalado e configurado, bastando apenas anotar os dados de conexão no arquivo adequado, conforme instrução abaixo.*
  
- * Configurar os dados de acesso [neste arquivo](./config/postgres.properties), conforme exemplo abaixo:
+ * Configurar os dados de acesso [neste arquivo](./config/postgres.properties), conforme exemplo:
 
 ```
 host=127.0.0.1

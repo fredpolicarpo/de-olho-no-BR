@@ -8,10 +8,11 @@ A plataforma gera uma cache com os dados fornecidos pela api do [CEPESP](http://
 
  - Ubuntu 16.04.3 LTS 64-bit
  - R >= 3.4.2
- - PostgreSQl >= 9.6.6
+ - PostgreSQL >= 9.6.6
  - As bibliotecas do R necessárias para cada um dos subprojetos está detalhada nas respectivas documentações, conforme links abaixo.
 
 ### Esta plataforma é composta por dois componentes principais
 
- - Portal Web: [Confira  a documentação aqui](./web-app/README.MD).
  - Serviço de atualização de cache: [Confira a documentação aqui](./atualizacao-cache/README.MD).
+ - Portal Web: [Confira  a documentação aqui](./web-app/README.MD).
+ 
