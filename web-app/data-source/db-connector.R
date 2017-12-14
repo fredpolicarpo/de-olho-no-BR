@@ -1,25 +1,23 @@
-library("RPostgreSQL")
+require(RPostgreSQL)
+require(properties)
+
 source("utils.R")
 
-dbHost = "localhost"
-dbName = "decifrando-eleicoes"
-dbUser = "postgres"
-dbPwd = "fibo123"
-dbPort = 5432
+dbData = read.properties("config/postgres.properties")
 
 drv <- dbDriver("PostgreSQL")
 
 getCon = function() {
-  con <- dbConnect(
+    con <- dbConnect(
     drv,
-    dbname = dbName,
-    host = dbHost,
-    port = dbPort,
-    user = dbUser,
-    password = dbPwd
-  )
-  
-  return (con)
+    dbname = dbData$database,
+    host = dbData$host,
+    port = dbData$port,
+    user = dbData$user,
+    password = dbData$password
+    )
+
+    return (con)
 }
 
 createTables = function() {
