@@ -1,1 +1,1 @@
-* * * * * Rscript main.R >/dev/null 2>&1
+0 1 * * * /path/Rscript main.R > /path/atualizacao-cache-$(date).log
