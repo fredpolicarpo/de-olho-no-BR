@@ -1,0 +1,10 @@
+name: decifrando-as-eleicoes
+title:
+username:
+account: fredpolicarpo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 221903
+bundleId: 1010387
+url: https://fredpolicarpo.shinyapps.io/decifrando-as-eleicoes/
+when: 1507122816.29994

@@ -1,0 +1,7 @@
+.checkbox, .radio {
+  display: inline; 
+}
+
+.shiny-input-container {
+    display: inline;
+}

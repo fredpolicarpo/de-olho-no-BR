@@ -1,0 +1,10 @@
+ggplot2
+dplyr
+purrr
+tidyr
+lubridate
+DT
+foreach
+doMC
+shinydashboard
+shiny
