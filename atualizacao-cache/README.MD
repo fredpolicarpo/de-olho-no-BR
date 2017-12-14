@@ -9,7 +9,7 @@ Essa documentação é uma parte do sistema **De olho no BR**, [confira  a docum
 
 #### Banco de dados de cache
  * Instalar banco de dados `Postgres SQL` versão >= 9.6.6
- * Criar uma base no `Postgres` e cofigrar os dados de acesso [neste arquivo](./config/postgres.properties), conforme exemplo abaixo:
+ * Criar uma base no `Postgres` e configurar os dados de acesso [neste arquivo](./config/postgres.properties), conforme exemplo abaixo:
 
 ```
 host=127.0.0.1
