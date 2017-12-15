@@ -1,9 +1,6 @@
 source("data-source/votos.R")
 source("utils.R")
 
-library(ggplot2)
-library(plotly)
-
 dados_presidentes_eleitos = function(con, output) {
   dados = presidentes_eleitos(con)
   

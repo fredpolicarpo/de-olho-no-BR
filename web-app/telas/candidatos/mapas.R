@@ -1,12 +1,6 @@
 source("data-source/db-connector.R")
 source("data-source/legendas.R")
 
-require(XML)
-require(RCurl)
-require(maptools)
-require(RColorBrewer)
-require(plotly)
-
 mapaUF = readShapePoly("mapas/estados_2010/estados_2010.shp")
 colfunc <- colorRampPalette(c("white", "darkgreen"))
 

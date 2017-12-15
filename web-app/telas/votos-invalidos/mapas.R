@@ -2,13 +2,6 @@ source("data-source/db-connector.R")
 source("data-source/votos-invalidos.R")
 source("utils.R")
 
-require(XML)
-require(RCurl)
-require(maptools)
-require(RColorBrewer)
-require(plotly)
-require(rgdal)
-
 mapaUF = readOGR("mapas/estados_2010/estados_2010.shp")
 colfunc <- colorRampPalette(c("white", "darkred"))
 

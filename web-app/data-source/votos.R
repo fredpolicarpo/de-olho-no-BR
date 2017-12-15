@@ -1,5 +1,3 @@
-require(glue)
-
 source("data-source/db-connector.R")
 source("data-source/candidatos.R")
 

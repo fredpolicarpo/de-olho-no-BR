@@ -1,7 +1,8 @@
+source("config/install-r-libraries.R")
 source("legendas.R")
 source("candidatos.R")
 source("votos.R")
-library(crayon)
+source("consolidacao-eleicao.R")
 
 cat(green("Iniciando atualização de dados\n"))
 
@@ -9,9 +10,17 @@ if (!dir.exists(DATA_DIR)) {
   dir.create(DATA_DIR)
 }
 
-main_atualiza_dados_legendas()
+con = getCon()
 
-main_atualiza_dados_candidatos()
+tryCatch({
+  main_atualiza_dados_consolidacao_eleicao()
+  
+  main_atualiza_dados_legendas()
+  
+  main_atualiza_dados_candidatos()
+  
+  main_atualiza_dados_votos()  
+  
+}, finally = dbDisconnect(con))
 
-main_atualiza_dados_votos()
 

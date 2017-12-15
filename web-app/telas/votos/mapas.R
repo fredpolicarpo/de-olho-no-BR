@@ -1,6 +1,3 @@
-library("rgdal")
-library(dplyr)
-library(data.table)
 shp <- readOGR("config/br_unidades_da_federacao", "BRUFE250GC_SIR", stringsAsFactors=FALSE, encoding="UTF-8")
 
 pg <- fread("data/processed/votos_uf_partido.csv", encoding="Latin-1")

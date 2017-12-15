@@ -1,7 +1,3 @@
-require(glue)
-require(dplyr)
-require(tidyr)
-
 source("data-source/db-connector.R")
 source("data-source/utils.R")
 

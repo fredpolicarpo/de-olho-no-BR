@@ -1,6 +1,3 @@
-library(dplyr)
-library(lubridate)
-
 dinheiro = function(numero) {
   sufixo = ""
   

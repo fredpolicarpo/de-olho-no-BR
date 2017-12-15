@@ -1,5 +1,3 @@
-library(plotly)
-
 votos_invalidos = fluidRow(
   box(
     title = "Votos inválidos - Eleições Federativas" ,

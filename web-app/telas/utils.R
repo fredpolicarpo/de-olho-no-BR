@@ -1,5 +1,3 @@
-require(plotly)
-
 grafico_barras_horizontais = function(x, y, sufixo = "") {
   options(repr.plot.width = 8, repr.plot.height = 6)
   

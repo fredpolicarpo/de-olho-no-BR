@@ -1,6 +1,3 @@
-require(ggplot2)
-require(plotly)
-
 source("data-source/manchetes.R")
 
 dados_top_10_ocupacoes = function(con, output, input) {

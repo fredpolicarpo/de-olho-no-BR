@@ -2,6 +2,8 @@ options(warn=-1)
 options(scipen=999)
 options(warn.conflicts = FALSE)
 
+source("config/install-r-libraries.R")
+
 source("config/settings.R")
 source("config/api-params.R")
 
@@ -34,10 +36,6 @@ source("telas/votos-invalidos/mapas.R")
 source("telas/votos-invalidos/grafico-votos-invalidos.R")
 
 source("utils.R")
-
-require(shiny)
-require(ggplot2)
-require(dplyr)
 
 con = getCon()
 

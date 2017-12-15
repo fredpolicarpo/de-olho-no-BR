@@ -1,5 +1,3 @@
-require(glue)
-
 source("data-source/manchetes.R")
 
 dados_manchetes_genero = function(con, output, input) {

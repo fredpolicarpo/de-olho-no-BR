@@ -1,9 +1,6 @@
 source("data-source/legendas.R")
 source("utils.R")
 
-library(ggplot2)
-library(plotly)
-
 dados_votos_invalidos= function(con, output) {
   dados = votos_invalidos(con)
   

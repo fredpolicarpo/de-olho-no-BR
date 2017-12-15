@@ -1,6 +1,3 @@
-require(RPostgreSQL)
-require(properties)
-
 source("utils.R")
 
 dbData = read.properties("config/postgres.properties")

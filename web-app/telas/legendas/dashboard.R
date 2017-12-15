@@ -1,5 +1,4 @@
 source("config/api-params.R")
-require(plotly)
 
 quantidade_candidatos = fluidRow(
   box(

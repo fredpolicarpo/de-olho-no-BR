@@ -1,5 +1,4 @@
 source("config/api-params.R")
-require(plotly)
 
 candidatos_eleicoes_federais = fluidRow(
   box(

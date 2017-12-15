@@ -1,5 +1,4 @@
 source("data-source/db-connector.R")
-library(dplyr)
 
 total_partidos_ano_estado = function(con, ano) {
   sql = paste0("select * from total_partidos_ano where sigla_uf != 'BR' AND ano_eleicao = ", ano)

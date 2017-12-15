@@ -1,5 +1,3 @@
-library(dplyr)
-
 despesa_total_geral = function() {
   despesa = sum(candidatos$DESPESA_MAX_CAMPANHA)
   return(despesa)

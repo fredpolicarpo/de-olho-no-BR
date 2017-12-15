@@ -1,9 +1,6 @@
 source("data-source/legendas.R")
 source("utils.R")
 
-library(ggplot2)
-library(plotly)
-
 dados_total_candidatos_ano= function(con, output) {
   dados = total_candidatos_ano(con)
   

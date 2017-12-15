@@ -77,7 +77,6 @@ get_legendas = function(cargo_cod, ano, filtros_extras = '') {
 # Arquitetura: Serviço de atualização de dados
 # Passo 3
 atualiza_dados_legendas = function(cargo_cod, ano) {
-  con = getCon()
   tryCatch({
     atualiza_dados(
       "legendas",
@@ -90,7 +89,7 @@ atualiza_dados_legendas = function(cargo_cod, ano) {
     )
   }, error = function(error_cod) {
     cat(red(error_cod, "\n"))
-  }, finally =  dbDisconnect(con))
+  })
 }
 
 recria_materialized_view_legendas = function(con, cargo_cod) {

@@ -1,9 +1,6 @@
 source("data-source/votos.R")
 source("utils.R")
 
-library(ggplot2)
-library(plotly)
-
 dados_prefeitos_eleitos = function(con, output, input) {
   if (is.null(input$selectUfsPrefeitosEleitos) || is.null(input$selectCidadesPrefeitosEleitos)) {
     return()

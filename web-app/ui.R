@@ -1,6 +1,3 @@
-library(shiny)
-library(shinydashboard)
-
 source("telas/manchetes/dashboard.R")
 source("telas/despesas/dashboard.R")
 source("telas/legendas/dashboard.R")

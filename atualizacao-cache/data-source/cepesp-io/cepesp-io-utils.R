@@ -21,7 +21,6 @@ get_data_atualizacao_cepesp = function(categoria, colunas, cargo_cod, ano, extra
     param_colunas,
     extra_param
   )
-  print(url)
   
   dados_atualizacao = fromJSON(file = url)
   
@@ -67,7 +66,7 @@ get_dados = function(categoria,
   # Define caminho onde o arquivo será baixado
   caminho.arquivo = file.path(DATA_DIR, nome.arquivo)
   
-  print("Baixando dados...")
+  print(glue("Baixando dados: {url}"))
   download.file(url, caminho.arquivo)
   
   print("Carregando data frame...")

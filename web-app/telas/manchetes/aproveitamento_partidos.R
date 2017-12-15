@@ -1,5 +1,3 @@
-require(glue)
-
 source("data-source/manchetes.R")
 
 dados_aproveitamento_partidos = function(con, output, input) {

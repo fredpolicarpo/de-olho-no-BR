@@ -55,7 +55,7 @@ verifica_necessidade_atualizacao_votos = function(cargo_cod, ano, con, filtro_uf
 
 # Arquitetura: Serviço de atualização de dados
 # Passo 2
-get_votos = function(cargo_cod, ano, filtro_uf) {
+get_votos = function(cargo_cod, ano, filtro_uf = '') {
   colunas = c(
     "DATA_GERACAO",
     "ANO_ELEICAO",
@@ -82,7 +82,7 @@ get_votos = function(cargo_cod, ano, filtro_uf) {
   
   extra_param = '&agregacao_regional=8'
   
-  if (is.null(filtro_uf) && is.na(filtro_uf) && filtro_uf != '') {
+  if (is.null(filtro_uf) || is.na(filtro_uf) || filtro_uf != '') {
     extra_param = glue('{extra_param}}&columns[0][name]=UF&columns[0][search][value]={filtro_uf}')  
   }
   
@@ -94,10 +94,7 @@ get_votos = function(cargo_cod, ano, filtro_uf) {
 # Arquitetura: Serviço de atualização de dados
 # Passo 3
 atualiza_dados_voto = function(cargo_cod, ano) {
-  con = getCon()
-  
   tryCatch({
-    
     eh_dados_eleicao_local = cargo_cod %in% cod_cargos_eleicoes_municipais
     
     if (eh_dados_eleicao_local) {
@@ -128,7 +125,7 @@ atualiza_dados_voto = function(cargo_cod, ano) {
     }
   }, error = function(error_cod) {
     cat(red(error_cod, "\n"))
-  }, finally =  dbDisconnect(con))
+  })
 }
 
 recria_materialized_view_votos = function(con, cargo_cod) {

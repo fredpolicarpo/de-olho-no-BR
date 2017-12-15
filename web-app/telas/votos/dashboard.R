@@ -1,5 +1,3 @@
-library(plotly)
-
 presidentes = fluidRow(
   box(
     title = "Presidentes eleitos",

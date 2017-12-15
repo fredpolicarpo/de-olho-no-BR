@@ -102,7 +102,6 @@ get_candidatos = function(cargo_cod, ano, filtros_extras = '') {
 # Arquitetura: Serviço de atualização de dados
 # Passo 3
 atualiza_dados_candidatos = function(cargo_cod, ano) {
-  con = getCon()
   tryCatch({
     atualiza_dados(
       "candidatos",
@@ -115,7 +114,7 @@ atualiza_dados_candidatos = function(cargo_cod, ano) {
     )  
   }, error = function(error_cod) {
     cat(red(error_cod, "\n"))
-  }, finally =  dbDisconnect(con))
+  })
 }
 
 #TODO - Definir views

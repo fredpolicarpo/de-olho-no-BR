@@ -1,5 +1,3 @@
-require(dplyr)
-
 source("config/api-params.R")
 
 add_tipo_eleicao = function(dados) {

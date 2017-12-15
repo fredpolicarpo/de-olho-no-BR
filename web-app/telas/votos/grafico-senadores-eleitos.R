@@ -1,9 +1,6 @@
 source("data-source/votos.R")
 source("utils.R")
 
-library(ggplot2)
-library(plotly)
-
 dados_senadores_eleitos = function(con, output, input) {
   ufs = input$selectUfsSenadoresEleitos
   
