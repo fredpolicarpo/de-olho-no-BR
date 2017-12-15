@@ -1,2 +1,2 @@
-library(shiny)
+source("server.R")
 runApp()

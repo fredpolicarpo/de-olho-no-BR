@@ -8,7 +8,6 @@ source("config/settings.R")
 source("config/api-params.R")
 
 source("data-source/legendas.R")
-source("data-source/candidatos.R")
 source("data-source/votos-invalidos.R")
 
 source("telas/manchetes/genero.R")

@@ -1,5 +1,4 @@
 source("data-source/db-connector.R")
-source("data-source/candidatos.R")
 
 presidentes_eleitos = function(con) {
   dados_votos = lerDados(con, "select * from presidentes_eleitos")

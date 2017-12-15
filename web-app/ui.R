@@ -1,5 +1,4 @@
 source("telas/manchetes/dashboard.R")
-source("telas/despesas/dashboard.R")
 source("telas/legendas/dashboard.R")
 source("telas/votos/dashboard.R")
 source("telas/votos-invalidos/dashboard.R")
