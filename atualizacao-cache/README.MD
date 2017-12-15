@@ -22,9 +22,9 @@ password=postgres
 ### Execução e agendamento
  1. Editar o arquivo `crontab` configurando os diretórios locais do arquivo [main.R](main.R), assim como o diretório para o arquivo de log. Exemplo:
  
- - Arquivo original: `0 1 * * * /path/Rscript main.R > /path/atualizacao-cache-$(date).log`
+ - Arquivo original: `0 1 * * * 0 1 * * * cd /path-to/atualizacao-cache/ ;  Rscript main.R > /path-to/atualizacao-cache-$(date).log`
  
- - Arquivo editado: `0 1 * * * /media/de-olho-no-BR/atualizacao-cache/Rscript main.R > /media/de-olho-no-BR/atualizacao-cache/atualizacao-cache-$(date).log`
+ - Arquivo editado: `0 1 * * * cd /media/de-olho-no-BR/atualizacao-cache/ ;  Rscript main.R > /path-to/atualizacao-cache-$(date).log`
  
  2. Dar permissão para executar o arquivo de agendamento do sistema de atualização de cache:
  `$chmod +x agendar-atualizacao-diaria.sh`

@@ -1,1 +1,1 @@
-0 1 * * * Rscript /path/main.R > /path/atualizacao-cache-$(date).log
+0 1 * * * cd /path-to/atualizacao-cache/ ;  Rscript main.R > /path-to/atualizacao-cache-$(date).log
