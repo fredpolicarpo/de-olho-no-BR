@@ -2,7 +2,7 @@
 
 **De olho no BR** é uma plataforma para visualização de dados eleitorais brasileiros onde o usuário pode navegar em um portal web com diversos painéis compostos por variados tipos de gráficos, além de gerar manchetes com base em alguns filtros pré-estabelecidos.
 
-A plataforma gera uma cache com os dados fornecidos pela api do [CEPESP](http://cepesp.io/), e à partir desta cache realiza diversas consultas e agregações que são os dados de entrada pra criação dos paineis e das manchetes.
+A plataforma gera uma cache com os dados fornecidos pela api do [CEPESP](http://cepesp.io/), e a partir desta cache realiza diversas consultas e agregações que são os dados de entrada para criação dos painéis e das manchetes.
 
 ### Requisitos
 
@@ -18,9 +18,9 @@ A plataforma gera uma cache com os dados fornecidos pela api do [CEPESP](http://
  
  
 # Funcionalidades
-O portal **De olho no BR** é composto por quatro painíes de visualização de dados:
+O portal **De olho no BR** é composto por quatro painéis de visualização de dados:
  1. **Manchetes:** Informações geradas para o público comum, para o navegador que entra nos sites de notícias para verificar informações interessantes sobre as eleições: como o partido que mais elege candidatos ou o cargo que mais elege mulheres. Para todas as informações o usuário pode selecioar um ou mais eleições específicas.
- 2. **Legendas**: Painel detalhado sobre quantidade de candidatos em cada cargo ao longo dos anos, assim como quantidade de legendas e coligações. Esse painel também mostra em um mapa como essas informações estão distribuidas ao longo das 17 unidades federativas brasileiras.
+ 2. **Legendas**: Painel detalhado sobre quantidade de candidatos em cada cargo ao longo dos anos, assim como quantidade de legendas e coligações. Esse painel também mostra em um mapa como essas informações estão distribuídas ao longo das 17 unidades federativas brasileiras.
  3. **Candidatos eleitos:** Mostra a quantidade de votos que elegeu cada cargo ao longo das eleições. Neste painel é possível comparar informações sobre os votos nos cargos e localidades (estados, cidades).
  4. **Votos inválidos:** Série temporal que exibe a evolução dos votos inválidos(brancos, nulos e abstenções) ao longo das eleições brasieliras. Este painel também mostra como os votos inválidos estão distribuídos nas 27 unidades federativas brasileiras.
  
