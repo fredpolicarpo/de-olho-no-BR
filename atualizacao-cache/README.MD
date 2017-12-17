@@ -35,3 +35,6 @@ password=postgres
  `$crontab -l`
  
  
+ # Arquitetura do Sistema
+ O desenho de arquitetura abaixo ilustra a interação entre o serviço de atualização, a API e dados do CEPSEP e o portal de visualização de dados:
+ ![Arquitetura](../docs/arquitetura.png)
