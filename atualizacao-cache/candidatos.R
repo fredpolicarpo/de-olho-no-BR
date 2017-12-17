@@ -126,6 +126,7 @@ recria_materialized_view_candidatos = function(con, cargo_cod) {
   excutarSql(con, "data-source/cache-postgres/views/proporcao_executivos_turno.sql")
   excutarSql(con, "data-source/cache-postgres/views/proporcao_eleitos_partido.sql")
   excutarSql(con, "data-source/cache-postgres/views/aproveitamento_eleitos_partido.sql")
+  excutarSql(con, "data-source/cache-postgres/views/total_candidatos_ano.sql")
 }
 
 atualiza_dados_candidatos_paralelo = function(cod_cargos, anos_eleicoes) {

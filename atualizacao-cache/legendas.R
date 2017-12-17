@@ -95,7 +95,6 @@ atualiza_dados_legendas = function(cargo_cod, ano) {
 recria_materialized_view_legendas = function(con, cargo_cod) {
   excutarSql(con, "data-source/cache-postgres/views/total_partidos_ano.sql")
   excutarSql(con, "data-source/cache-postgres/views/total_coligacoes_ano.sql")
-  excutarSql(con, "data-source/cache-postgres/views/total_candidatos_ano.sql")
 }
 
 atualiza_dados_legendas_paralelo = function(cod_cargos, anos_eleicoes) {
