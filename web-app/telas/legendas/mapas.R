@@ -43,9 +43,9 @@ mapa_qtd_partidos = function(con, output, input) {
       legend = rev((levels(totais_cat))),
       box.lty = 0,
       fill = rev(paletaDeCores),
-      cex = .8,
+      cex = 1.5,
       ncol = 4,
-      title = paste('Elição de', ano)
+      title = paste('Eleição de', ano)
     ) 
   })
 }
@@ -88,9 +88,9 @@ mapa_qtd_coligacoes = function(con, output, input) {
       legend = rev((levels(totais_cat))),
       box.lty = 0,
       fill = rev(paletaDeCores),
-      cex = .8,
+      cex = 1.0,
       ncol = 4,
-      title = paste('Elição de', ano)
+      title = paste('Eleição de', ano)
     ) 
   })
 }

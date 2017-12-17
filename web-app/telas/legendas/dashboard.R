@@ -60,7 +60,7 @@ mapa_partidos_coligacoes = fluidRow(
       "selectAnoEleicao",
       "",
       selected = 2008,
-      choices = c("Escolha um ano" = "", anos_eleicoes_federativas, anos_eleicoes_municipais),
+      choices = c("Escolha um ano" = "", anos_eleicoes),
       multiple = F
     ),
     box(

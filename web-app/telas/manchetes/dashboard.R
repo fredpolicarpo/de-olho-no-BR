@@ -1,8 +1,5 @@
 source("config/api-params.R")
 
-anos_eleicoes = c(anos_eleicoes_federativas, anos_eleicoes_municipais) %>%
-  sort()
-
 generos =  fluidRow(
   box(
     title = "Distribuição de gênero entre os candidatos eleitos",

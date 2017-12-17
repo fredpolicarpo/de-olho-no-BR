@@ -15,6 +15,9 @@ cod_cargos_eleicoes_municipais = c(11, 13)
 names(cod_cargos_eleicoes_municipais) = c("prefeito", "vereador")
 anos_eleicoes_municipais = c(2000, 2004, 2008, 2012, 2016)
 
+anos_eleicoes = c(anos_eleicoes_federativas, anos_eleicoes_municipais) %>%
+    sort()
+
 agregacoes_politicas = c(1, 2, 3, 4)
 names(agregacoes_politicas) = c("partido", "candidatos", "coligacao", "conslidacao_eleicao")
 

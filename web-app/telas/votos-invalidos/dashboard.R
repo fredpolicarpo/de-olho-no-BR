@@ -15,9 +15,6 @@ votos_invalidos = fluidRow(
   )
 )
 
-anos_eleicoes = c(anos_eleicoes_federativas, anos_eleicoes_municipais) %>%
-  sort()
-
 mapas = fluidRow(
   box(
     solidHeader = F,

@@ -16,3 +16,30 @@ A plataforma gera uma cache com os dados fornecidos pela api do [CEPESP](http://
  - Serviço de atualização de cache: [Confira a documentação aqui](./atualizacao-cache/README.MD).
  - Portal Web: [Confira  a documentação aqui](./web-app/README.MD).
  
+ 
+# Funcionalidades
+O portal **De olho no BR** é composto por quatro painíes de visualização de dados:
+ 1. **Manchetes:** Informações geradas para o público comum, para o navegador que entra nos sites de notícias para verificar informações interessantes sobre as eleições: como o partido que mais elege candidatos ou o cargo que mais elege mulheres. Para todas as informações o usuário pode selecioar um ou mais eleições específicas.
+ 2. **Legendas**: Painel detalhado sobre quantidade de candidatos em cada cargo ao longo dos anos, assim como quantidade de legendas e coligações. Esse painel também mostra em um mapa como essas informações estão distribuidas ao longo das 17 unidades federativas brasileiras.
+ 3. **Candidatos eleitos:** Mostra a quantidade de votos que elegeu cada cargo ao longo das eleições. Neste painel é possível comparar informações sobre os votos nos cargos e localidades (estados, cidades).
+ 4. **Votos inválidos:** Série temporal que exibe a evolução dos votos inválidos(brancos, nulos e abstenções) ao longo das eleições brasieliras. Este painel também mostra como os votos inválidos estão distribuídos nas 27 unidades federativas brasileiras.
+ 
+ Abaixo seguem *screenshots* das 4 funcionalidades citadas
+ 
+### Manchetes
+![Manchetes](./docs/manchetes.png)
+ 
+### Legendas
+![Legendas](./docs/lengedas.png)
+
+### Candidatos eleitos
+![Candidatos eleitos](./docs/candidatos%20eleitos.png)
+
+### Votos inválidos
+![Votos inválidos](./docs/votos%20invalidos.png)
+
+
+# Apresentação do Projeto
+A seguir um vídeo com a apresentação do projeto
+
+[![De olho no BR: Apresentação](./docs/YouTube.png)](https://youtu.be/ddZCiVrQapg "De olho no BR: Apresentação")

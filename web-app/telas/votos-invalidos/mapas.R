@@ -62,6 +62,7 @@ plota_mapa = function(dados_organizados, ano) {
     x = 'center',
     legend = dados_organizados[['legenda']],
     box.lty = 0,
+    cex = 2,
     fill = dados_organizados[['paleta']],
     ncol = 2,
     title = paste('Eleição de', ano)

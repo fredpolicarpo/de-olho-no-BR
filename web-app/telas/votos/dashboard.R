@@ -1,6 +1,6 @@
 presidentes = fluidRow(
   box(
-    title = "Presidentes eleitos",
+    title = "Votos dos presidentes eleitos",
     collapsible = TRUE,
     width = 12,
     plotlyOutput("grafico_presidentes_eleitos")
@@ -20,7 +20,7 @@ governadores = fluidRow(
       multiple = T
     ),
     box(
-      title = "Governadores eleitos",
+      title = "Votos dos governadores eleitos",
       collapsible = TRUE,
       solidHeader = F,
       width = 12,
@@ -42,7 +42,7 @@ senadores =  fluidRow(
       multiple = T
     ),
     box(
-      title = "Senadores eleitos",
+      title = "Votos dos senadores eleitos",
       collapsible = TRUE,
       solidHeader = F,
       width = 12,
@@ -64,7 +64,7 @@ deputados_federais =  fluidRow(
       multiple = T
     ),
     box(
-      title = "Deputados federais eleitos",
+      title = "Votos dos deputados federais eleitos",
       collapsible = TRUE,
       solidHeader = F,
       width = 12,
@@ -86,7 +86,7 @@ deputados_estaduais =  fluidRow(
       multiple = T
     ),
     box(
-      title = "Deputados estaduais eleitos",
+      title = "Votos dos deputados estaduais eleitos",
       collapsible = TRUE,
       solidHeader = F,
       width = 12,
@@ -97,7 +97,7 @@ deputados_estaduais =  fluidRow(
 
 prefeitos = fluidRow(
   box(
-    title = 'Prefeitos eleitos',
+    title = 'Votos dos prefeitos eleitos',
     width = 12,
     solidHeader = F,
     collapsible = F,
@@ -125,7 +125,7 @@ prefeitos = fluidRow(
 
 vereadores = fluidRow(
   box(
-    title = 'Vereadores eleitos',
+    title = 'Votos dos vereadores eleitos',
     width = 12,
     solidHeader = F,
     collapsible = F,
@@ -163,6 +163,6 @@ dashVotos = tabItem(
   senadores,
   deputados_federais,
   deputados_estaduais,
-  prefeitos,
-  vereadores
+  prefeitos
+  #vereadores - Não utilizado pois a API do Cepesp não suporta obter os dados da forma que estamos fazendo - Buscar outra forma
 )
